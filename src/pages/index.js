@@ -11,11 +11,11 @@ import { useState } from 'react'
 import mercadolibre from '../../public/mercadolibre.png'
 
 export default function Home() {
-  const [darkMode, SetdarkMode] = useState(false)
+  const [darkMode, SetdarkMode] = useState(true)
   return (
     <div className={darkMode? "dark": ""}>
-      <div className='absolute w-80 h-80 dark:absolute w-80 h-80'>
-          <Canvas camera={{position: [0.0, 0.0, 8.0]}}>
+      <div className='absolute mt-10 w-80 h-80 dark:absolute w-80 h-80'>
+          <Canvas camera={{position: [0.0, 0.0, 9.0]}}>
             <Blob/>
           </Canvas>
       </div>
@@ -31,9 +31,9 @@ export default function Home() {
           <nav className="py-10 mb-12 flex justify-between dark:text-white">
             <h1 className="text-xl font-burtons"></h1>
             <ul className="flex items-center">
-              <li>
+              {/* <li>
                 <BsFillMoonStarsFill onClick={() => SetdarkMode(!darkMode)} className="cursor-pointer text-2xl"/>
-              </li>
+              </li> */}
               <li>
                 <a className=" bg-gradient-to-r from-sky-500 to-cyan-500 text-white px-4 py-2 rounded-md ml-8" href='/Laura_Gonzalez_CV.pdf' target="_blank" rel="noopener noreferrer" download>Resume</a>
               </li>
