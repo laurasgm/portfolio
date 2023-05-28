@@ -7,8 +7,10 @@ import Image from 'next/legacy/image'
 import devlaura from '../../public/profile-laudev.png'
 import code from '../../public/code.png'
 import design from '../../public/design.png'
+import icon from '../../public/icon.png'
 import { useState } from 'react'
-import mercadolibre from '../../public/mercadolibre.png'
+import mercadolibre from '../../public/mercadolibre.jpg'
+import portfolio from '../../public/portfolio1.png'
 
 export default function Home() {
   const [darkMode, SetdarkMode] = useState(true)
@@ -57,7 +59,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section>
+        <section className='md:px-40 lg:px-20'>
           <div>
             <h3 className="text-3xl py-1 pt-20 dark:text-white">My services</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
@@ -65,7 +67,7 @@ export default function Home() {
             </p>
           </div>
           <div className="lg:flex gap-10">
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1 dark:bg-white">
+            <div className="overflow-hidden shadow-lg text-center p-10 rounded-xl my-10 flex-1 dark:bg-white">
               <Image className="mx-auto" src={design} width={100} height={100}></Image>
               <h3 className="text-lg font-medium pt-8 pb-2">Beautiful Designs</h3>
               <p className="py-2">Creating elegant designs suited for your needs following core design theory. </p>
@@ -74,7 +76,7 @@ export default function Home() {
               <p className="text-gray-800 py-1">Adobe XD</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1 dark:bg-white">
-              <Image className="mx-auto" src={code} width={100} height={100}></Image>
+              <Image className="mx-auto" src={icon} width={100} height={100}></Image>
               <h3 className="text-lg font-medium pt-8 pb-2">FrontEnd</h3>
               <p className="py-2">Creating responsive design for a web using Javascript or Typescript. </p>
               <h4 className="py-4 text-sky-600">Skills</h4>
@@ -94,14 +96,14 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section>
+        <section className='md:px-40 lg:px-20'>
           <div>
             <h3 className="text-3xl py-1 dark:text-white">Portfolio</h3>
           </div>
-          <div className=" flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
+          <div className="shadow-lg rounded-xl flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
             <div className='flex-1'>
               <a href="https://github.com/laurasgm/replicate-meli" target="_blank">
-                <Image src={mercadolibre} className="roudend-lg object-cover" width={400} height={400}></Image>
+                <Image src={portfolio} className="roudend-lg " width={400} height={400}></Image>
               </a>
             </div>
           </div>
