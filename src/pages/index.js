@@ -6,6 +6,8 @@ import devlaura from '../../public/profile-laudev.png'
 import code from '../../public/code.png'
 import design from '../../public/design.png'
 import { useState } from 'react'
+import mercadolibre from '../../public/mercadolibre.png'
+import CV from '../../public/Laura_Gonzalez_CV.pdf'
 
 export default function Home() {
   const [darkMode, SetdarkMode] = useState(false)
@@ -25,7 +27,9 @@ export default function Home() {
               <li>
                 <BsFillMoonStarsFill onClick={() => SetdarkMode(!darkMode)} className="cursor-pointer text-2xl"/>
               </li>
-              <li><a className=" bg-gradient-to-r from-sky-500 to-cyan-500 text-white px-4 py-2 rounded-md ml-8" href="#">Resume</a></li>
+              <li>
+                <a className=" bg-gradient-to-r from-sky-500 to-cyan-500 text-white px-4 py-2 rounded-md ml-8" href='/Laura_Gonzalez_CV.pdf' target="_blank" rel="noopener noreferrer" download>Resume</a>
+              </li>
             </ul>
           </nav>
           <div className="text-center p-10">
@@ -34,7 +38,9 @@ export default function Home() {
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 md:text-xl max-w-lg mx-auto">Developer with a passion for creating intuitive and visually appealing user interfaces. Proficient in Javascript, Python and experienced in building web applications. UX UI enthusiast with a keen eye for detail and a focus on delivering a seamless user experience. </p>
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
-            <AiFillLinkedin/>
+            <a href="https://www.linkedin.com/in/laurasgm/" target="_blank">
+              <AiFillLinkedin/>
+            </a>
           </div>
           <div className="relative mx-auto bg-gradient-to-b from-sky-500 rounded-full w-80 h-80 mt-10 overflow-hidden md:h-96 md:w-96">
             <Image src={devlaura} layout='fill' objectFit='cover'></Image>
@@ -42,7 +48,7 @@ export default function Home() {
         </section>
         <section>
           <div>
-            <h3 className="text-3xl py-1 dark:text-white">Services i offer</h3>
+            <h3 className="text-3xl py-1 pt-20 dark:text-white">My services</h3>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
             Skilled in both front-end and back-end development, with a strong understanding of modern web technologies and frameworks. Eager to take on new challenges and always striving to improve my skillset.
             </p>
@@ -52,41 +58,40 @@ export default function Home() {
               <Image className="mx-auto" src={design} width={100} height={100}></Image>
               <h3 className="text-lg font-medium pt-8 pb-2">Beautiful Designs</h3>
               <p className="py-2">Creating elegant designs suited for your needs following core design theory. </p>
-              <h4 className="py-4 text-sky-600">Design use i use</h4>
+              <h4 className="py-4 text-sky-600">UX & UI</h4>
               <p className="text-gray-800 py-1">Figma</p>
               <p className="text-gray-800 py-1">Adobe XD</p>
-              <p className="text-gray-800 py-1">Blender</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1 dark:bg-white">
               <Image className="mx-auto" src={code} width={100} height={100}></Image>
-              <h3 className="text-lg font-medium pt-8 pb-2">Beautiful Designs</h3>
-              <p className="py-2">Creating elegant designs suited for your needs following core design theory. </p>
-              <h4 className="py-4 text-sky-600">Design use i use</h4>
-              <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">Adobe XD</p>
-              <p className="text-gray-800 py-1">Blender</p>
+              <h3 className="text-lg font-medium pt-8 pb-2">FrontEnd</h3>
+              <p className="py-2">Creating responsive design for a web using Javascript or Typescript. </p>
+              <h4 className="py-4 text-sky-600">Skills</h4>
+              <p className="text-gray-800 py-1">React Js</p>
+              <p className="text-gray-800 py-1">Angular</p>
+              <p className="text-gray-800 py-1">Next JS</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1 dark:bg-white">
               <Image className="mx-auto" src={code} width={100} height={100}></Image>
-              <h3 className="text-lg font-medium pt-8 pb-2">Beautiful Designs</h3>
-              <p className="py-2">Creating elegant designs suited for your needs following core design theory. </p>
-              <h4 className="py-4 text-sky-600">Design use i use</h4>
-              <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">Adobe XD</p>
-              <p className="text-gray-800 py-1">Blender</p>
+              <h3 className="text-lg font-medium pt-8 pb-2">BackEnd</h3>
+              <p className="py-2">Building robust and scalable web applications. Implementing business logic, database management, and performance optimization. </p>
+              <h4 className="py-4 text-sky-600">Skills</h4>
+              <p className="text-gray-800 py-1">Python</p>
+              <p className="text-gray-800 py-1">. Net</p>
+              <p className="text-gray-800 py-1">Postgres SQL</p>
+              <p className="text-gray-800 py-1">AWS</p>
             </div>
           </div>
         </section>
         <section>
           <div>
             <h3 className="text-3xl py-1 dark:text-white">Portfolio</h3>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-            Skilled in both front-end and back-end development, with a strong understanding of modern web technologies and frameworks. Eager to take on new challenges and always striving to improve my skillset.
-            </p>
           </div>
           <div className=" flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
             <div className='flex-1'>
-              <Image src={code} className="roudend-lg object-cover" width={400} height={400}></Image>
+              <a href="https://github.com/laurasgm/replicate-meli" target="_blank">
+                <Image href={''} src={mercadolibre} className="roudend-lg object-cover" width={400} height={400}></Image>
+              </a>
             </div>
           </div>
         </section>
