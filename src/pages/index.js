@@ -45,7 +45,7 @@ export default function Home() {
             <div className=" relative text-center mt-10 p-10 py-10">
               <h2 className="text-5xl py-2 text-sky-600 font-medium md:text-6xl dark:text-sky-400">Laura Sophia Gonzalez Montoya</h2>
               <h3 className="text-2xl py-2 md:text-3xl dark:text-white">Full Stack Developer</h3>
-              <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 md:text-xl max-w-lg mx-auto">Developer with a passion for creating intuitive and visually appealing user interfaces. Proficient in Javascript, Python and experienced in building web applications. UX UI enthusiast with a keen eye for detail and a focus on delivering a seamless user experience. </p>
+              <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 md:text-xl max-w-lg mx-auto">I'm a developer with passion for creating intuitive and visually appealing user interfaces. I'm proficient in JavaScript and Python, and I have experience in building web applications. As a UX/UI enthusiast, I have a keen eye for detail and focus on delivering a seamless user experience. </p>
             </div>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
               <a href="https://www.linkedin.com/in/laurasgm/" target="_blank">
@@ -80,7 +80,7 @@ export default function Home() {
               <h3 className="text-lg font-medium pt-8 pb-2">FrontEnd</h3>
               <p className="py-2">Creating responsive design for a web using Javascript or Typescript. </p>
               <h4 className="py-4 text-sky-600">Skills</h4>
-              <p className="text-gray-800 py-1">React Js</p>
+              <p className="text-gray-800 py-1">React JS</p>
               <p className="text-gray-800 py-1">Angular</p>
               <p className="text-gray-800 py-1">Next JS</p>
             </div>
@@ -90,7 +90,7 @@ export default function Home() {
               <p className="py-2">Building robust and scalable web applications. Implementing business logic, database management, and performance optimization. </p>
               <h4 className="py-4 text-sky-600">Skills</h4>
               <p className="text-gray-800 py-1">Python</p>
-              <p className="text-gray-800 py-1">. Net</p>
+              <p className="text-gray-800 py-1">Node JS</p>
               <p className="text-gray-800 py-1">Postgres SQL</p>
               <p className="text-gray-800 py-1">AWS</p>
             </div>
