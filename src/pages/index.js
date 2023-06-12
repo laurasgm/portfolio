@@ -11,6 +11,7 @@ import icon from '../../public/icon.png'
 import { useState } from 'react'
 import portfolio from '../../public/portfolio.png'
 import portfolio1 from '../../public/portfolio1.png'
+import portfolio2 from '../../public/portfolio2.png'
 
 export default function Home() {
   const [darkMode, SetdarkMode] = useState(true)
@@ -99,15 +100,20 @@ export default function Home() {
           <div>
             <h3 className="text-3xl py-1 dark:text-white">Portfolio</h3>
           </div>
-          <div className="shadow-lg rounded-lg flex flex-col gap-2 py-10 lg:flex-row lg:flex-wrap">
-            <div className="rounded-lg pe-10">
+          <div className="shadow-lg rounded-lg flex flex-col gap-2 py-5 lg:flex-row lg:flex-wrap">
+            <div className="rounded-lg pe-5">
               <a href="https://github.com/laurasgm/portfolio" target="_blank">
-                <Image src={portfolio} className="roudend-xl "  width={400} height={400}></Image>
+                <Image src={portfolio} className="roudend-xl "  width={350} height={350}></Image>
               </a>
             </div>
-            <div className='rounded-lg'>
+            <div className='rounded-lg pe-5'>
               <a href="https://github.com/laurasgm/replicate-meli" target="_blank">
-                <Image src={portfolio1} className="roudend-xl " width={400} height={400}></Image>
+                <Image src={portfolio1} className="roudend-xl " width={350} height={350}></Image>
+              </a>
+            </div>
+            <div className='rounded-lg pe-5'>
+              <a href="https://www.figma.com/proto/BDMzkhBtkpkm9zYhE6boh6/Prototipo-Funcional-Gonzalez-Montoya?node-id=105-88&starting-point-node-id=105%3A88" target="_blank">
+                <Image src={portfolio2} className="roudend-xl " width={350} height={350}></Image>
               </a>
             </div>
           </div>
