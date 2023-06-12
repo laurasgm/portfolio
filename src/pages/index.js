@@ -4,13 +4,13 @@ import {AiFillLinkedin} from 'react-icons/ai'
 import { Canvas } from '@react-three/fiber'
 import Blob from "../components/Blob";
 import Image from 'next/legacy/image'
-import devlaura from '../../public/profile-laudev.png'
+import devlaura from '../../public/profile-laudev.jpeg'
 import code from '../../public/code.png'
 import design from '../../public/design.png'
 import icon from '../../public/icon.png'
 import { useState } from 'react'
-import mercadolibre from '../../public/mercadolibre.jpg'
-import portfolio from '../../public/portfolio1.png'
+import portfolio from '../../public/portfolio.png'
+import portfolio1 from '../../public/portfolio1.png'
 
 export default function Home() {
   const [darkMode, SetdarkMode] = useState(true)
@@ -29,7 +29,6 @@ export default function Home() {
       </Head>
       <main className="bg-white px-10 md:px-10 lg:px-10 dark:bg-gray-900">
         <section className="min-h-screen">
-          
           <nav className="py-10 mb-12 flex justify-between dark:text-white">
             <h1 className="text-xl font-burtons"></h1>
             <ul className="flex items-center">
@@ -53,7 +52,7 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <div className=' inline-block'>
+          <div className='md:max-lg:flex inline-block'>
             <div className="relative mx-auto bg-gradient-to-b from-sky-500 rounded-full w-80 h-80 mt-10 overflow-hidden md:h-96 md:w-96">
               <Image src={devlaura} layout='fill' objectFit='cover'></Image>
             </div>
@@ -100,10 +99,15 @@ export default function Home() {
           <div>
             <h3 className="text-3xl py-1 dark:text-white">Portfolio</h3>
           </div>
-          <div className="shadow-lg rounded-xl flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
-            <div className='flex-1'>
+          <div className="shadow-lg rounded-lg flex flex-col gap-2 py-10 lg:flex-row lg:flex-wrap">
+            <div className="rounded-lg pe-10">
+              <a href="https://github.com/laurasgm/portfolio" target="_blank">
+                <Image src={portfolio} className="roudend-xl "  width={400} height={400}></Image>
+              </a>
+            </div>
+            <div className='rounded-lg'>
               <a href="https://github.com/laurasgm/replicate-meli" target="_blank">
-                <Image src={portfolio} className="roudend-lg " width={400} height={400}></Image>
+                <Image src={portfolio1} className="roudend-xl " width={400} height={400}></Image>
               </a>
             </div>
           </div>
