@@ -45,7 +45,7 @@ export default function Home() {
             <div className=" relative text-center mt-10 p-10 py-10">
               <h2 className="text-5xl py-2 text-sky-600 font-medium md:text-6xl dark:text-sky-400">Laura Sophia Gonzalez Montoya</h2>
               <h3 className="text-2xl py-2 md:text-3xl dark:text-white">Full Stack Developer</h3>
-              <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 md:text-xl max-w-lg mx-auto">I'm a developer with passion for creating intuitive and visually appealing user interfaces. I'm proficient in JavaScript and Python, and I have experience in building web applications. As a UX/UI enthusiast, I have a keen eye for detail and focus on delivering a seamless user experience. </p>
+              <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 md:text-xl max-w-lg mx-auto">I&apos;m a developer with passion for creating intuitive and visually appealing user interfaces. I&apos;m proficient in JavaScript and Python, and I have experience in building web applications. As a UX/UI enthusiast, I have a keen eye for detail and focus on delivering a seamless user experience. </p>
             </div>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
               <a href="https://www.linkedin.com/in/laurasgm/" target="_blank">
@@ -68,7 +68,7 @@ export default function Home() {
           </div>
           <div className="lg:flex gap-10">
             <div className="overflow-hidden shadow-lg text-center p-10 rounded-xl my-10 flex-1 dark:bg-white">
-              <Image className="mx-auto" src={design} width={100} height={100}></Image>
+              <Image className="mx-auto" alt="" src={design} width={100} height={100}></Image>
               <h3 className="text-lg font-medium pt-8 pb-2">Beautiful Designs</h3>
               <p className="py-2">Creating elegant designs suited for your needs following core design theory. </p>
               <h4 className="py-4 text-sky-600">UX & UI</h4>
@@ -76,7 +76,7 @@ export default function Home() {
               <p className="text-gray-800 py-1">Adobe XD</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1 dark:bg-white">
-              <Image className="mx-auto" src={icon} width={100} height={100}></Image>
+              <Image className="mx-auto" alt="" src={icon} width={100} height={100}></Image>
               <h3 className="text-lg font-medium pt-8 pb-2">FrontEnd</h3>
               <p className="py-2">Creating responsive design for a web using Javascript or Typescript. </p>
               <h4 className="py-4 text-sky-600">Skills</h4>
@@ -85,7 +85,7 @@ export default function Home() {
               <p className="text-gray-800 py-1">Next JS</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 flex-1 dark:bg-white">
-              <Image className="mx-auto" src={code} width={100} height={100}></Image>
+              <Image className="mx-auto" alt="" src={code} width={100} height={100}></Image>
               <h3 className="text-lg font-medium pt-8 pb-2">BackEnd</h3>
               <p className="py-2">Building robust and scalable web applications. Implementing business logic, database management, and performance optimization. </p>
               <h4 className="py-4 text-sky-600">Skills</h4>
@@ -103,17 +103,17 @@ export default function Home() {
           <div className="shadow-lg rounded-lg flex flex-col gap-2 py-5 lg:flex-row lg:flex-wrap">
             <div className="rounded-lg pe-5">
               <a href="https://github.com/laurasgm/portfolio" target="_blank">
-                <Image src={portfolio} className="roudend-xl "  width={350} height={350}></Image>
+                <Image src={portfolio} alt="" className="roudend-xl "  width={350} height={350}></Image>
               </a>
             </div>
             <div className='rounded-lg pe-5'>
               <a href="https://github.com/laurasgm/replicate-meli" target="_blank">
-                <Image src={portfolio1} className="roudend-xl " width={350} height={350}></Image>
+                <Image src={portfolio1} alt="" className="roudend-xl " width={350} height={350}></Image>
               </a>
             </div>
             <div className='rounded-lg pe-5'>
               <a href="https://www.figma.com/proto/BDMzkhBtkpkm9zYhE6boh6/Prototipo-Funcional-Gonzalez-Montoya?node-id=105-88&starting-point-node-id=105%3A88" target="_blank">
-                <Image src={portfolio2} className="roudend-xl " width={350} height={350}></Image>
+                <Image src={portfolio2} alt="" className="roudend-xl " width={350} height={350}></Image>
               </a>
             </div>
           </div>
