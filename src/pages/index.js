@@ -96,7 +96,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className='md:px-40 lg:px-20'>
+        {/* <section className='md:px-40 lg:px-20'>
           <div>
             <h3 className="text-3xl py-1 dark:text-white">Portfolio</h3>
           </div>
@@ -117,7 +117,7 @@ export default function Home() {
               </a>
             </div>
           </div>
-        </section>
+        </section> */}
       </main>
     </div>
   )
